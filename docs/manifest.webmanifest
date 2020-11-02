@@ -4,18 +4,18 @@
     "display": "standalone",
     "theme_color": "#000080",
     "background_color": "#808080",
-    "start_url": "/index.html",
-    "scope": "/",
+    "start_url": "/pwa-fugu-workshop/index.html",
+    "scope": "/pwa-fugu-workshop/",
     "icons": [{ "src": "icon.png", "sizes": "512x512" }],
     "shortcuts": [{
         "name": "About Paint",
         "short_name": "About",
         "description": "Show information about Paint",
-        "url": "/about.html",
+        "url": "/pwa-fugu-workshop/about.html",
         "icons": [{ "src": "icon.png", "sizes": "512x512" }]
     }],
     "file_handlers": [{
-        "action": "/index.html",
+        "action": "/pwa-fugu-workshop/index.html",
         "accept": {
             "image/png": [".png"]
         }
