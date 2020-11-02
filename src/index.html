@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav>
+        <button id="open">Open</button>
+        <button id="save">Save</button>
+        <button id="copy">Copy</button>
+        <button id="paste">Paste</button>
+        <button id="share">Share</button>
+        <input type="color" id="color">
+    </nav>
+    <canvas id="canvas" width="600" height="480"></canvas>
+    <script src="app.js" type="module"></script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
